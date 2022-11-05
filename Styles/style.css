@@ -32,7 +32,6 @@ fieldset {
     border-width: 2px;
     border-style: solid;
     border-color: rgb(4, 107, 107);
-    margin: 30px;
 }
 form .input{
     padding: 12px 20px;
@@ -47,9 +46,8 @@ marquee {
     font-size: 2em;
 }
 .form {
-    margin: 30px;
     padding: 20px;
-    border-radius 1px;
+    border-radius: 1px;
     background-color: #f2f2f2;
 }
 h3 {
@@ -129,7 +127,7 @@ a :hover {
   }
 .logo {
     width: 20%;
-    padding: 1em;
+    box-sizing: content-box;
 }
 .header {
 background-color: rgb(4, 107, 107);
