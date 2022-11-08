@@ -9,6 +9,7 @@ body {
 .topnav {
     overflow: hidden;
     background-color: white;
+    
 }
 .topnav a {
     float: left;
@@ -21,10 +22,16 @@ body {
 .topnav a:hover {
     background-color:rgb(4, 107, 107);
     color: white;
+    border-radius: 7px;
+    padding: 5px;
+    margin: 10px;
 }
 .topnav a.active {
     background-color: rgb(4, 107, 107);
     color: white;
+    border-radius: 7px;
+    padding: 5px;
+    margin-top: 10px;
 }
 fieldset {
     border-radius: 7px;
@@ -49,9 +56,6 @@ marquee {
     padding: 20px;
     border-radius: 1px;
     background-color: #f2f2f2;
-}
-h3 {
-    color: rgb(4, 107, 107);
 }
 label {
     color: rgb(4, 107, 107);
@@ -126,14 +130,15 @@ a :hover {
     padding: 1em 0;
   }
 .logo {
-    width: 20%;
-    box-sizing: content-box;
+    width: 13%;
+    margin: 1em;
+    
 }
 .header {
 background-color: rgb(4, 107, 107);
 color: rgb(255, 255, 255);
 border-radius: 9px;
-padding: 5px;
+padding: 1px;
 display: inline-block;
 text-decoration: none;
 text-align:center;
