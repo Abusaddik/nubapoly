@@ -5,6 +5,7 @@ body {
     Cantarell, 'Open Sans', 'Helvetica Neue',
     sans-serif;
     background-color: whitesmoke;
+    margin: 0%;
 }
 .topnav {
     overflow: hidden;
