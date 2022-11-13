@@ -6,40 +6,40 @@ body {
     sans-serif;
     background-color: whitesmoke;
     margin: 0%;
+    padding: 0px;
 }
-.topnav {
-    overflow: hidden;
-    background-color: white;
-    
+.navbar {
+    padding: 15px 0px;
+    background-color: white !important;
+    border: solid transparent !important;
 }
-.topnav a {
-    float: left;
-    color: rgb(4, 107, 107);
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 15px; 
+.navbar ul li a {
+    color: rgb(4, 107, 107) !important;
+    font-weight: 700;
+    transition: all 0.5s ease-in;
+    text-decoration: none !important;  
 }
-.topnav a:hover {
-    background-color:rgb(4, 107, 107);
-    color: white;
-    border-radius: 7px;
-    padding: 5px;
-    margin: 10px;
+.navbar ul li a:hover{
+    color: rgb(238, 255, 7) !important;
+    border-radius: 1px;
 }
-.topnav a.active {
-    background-color: rgb(4, 107, 107);
-    color: white;
-    border-radius: 7px;
-    padding: 5px;
-    margin-top: 10px;
+.navbar-toggle{
+    border: 1px solid transparent !important;
+    background-color: transparent !important;
+} 
+.navbar--inverse .navbar-toggle:focus, 
+.navbar-inverse .navbar-toggle:hover {
+    background-color: transparent !important;
 }
-fieldset {
-    border-radius: 7px;
-    color: rgb(4, 107, 107);
-    border-width: 2px;
-    border-style: solid;
-    border-color: rgb(4, 107, 107);
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: rgb(4, 107, 107) !important;
+}
+.navbar-inverse .navbar-collapse{
+    border-color: transparent !important; 
+}
+.active {
+    border-radius:  1px;
+    border-bottom: solid rgb(4, 107, 107);            
 }
 form .input{
     padding: 12px 20px;
@@ -47,7 +47,7 @@ form .input{
     width: 100%;
 }
 legend {
-    color: rgb(4, 107, 107);
+    color: rgb(4, 107, 107) !important;
 }
 marquee {
     color:rgb(4, 107, 107);
@@ -143,7 +143,7 @@ padding: 1px;
 display: inline-block;
 text-decoration: none;
 text-align:center;
-margin: 30px;
+margin: 100px 30px 5px 30px;
 }
 @keyframes header { 
 0% {
