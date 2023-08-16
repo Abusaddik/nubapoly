@@ -1,86 +1,483 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<mata charset="utf-8" />
-		<link rel="shortcut icon" href="img/nuba.png" />
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="css/style.css" />
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!--Font Awesome Start-->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <head>
+        <title>Alwasila Tech</title>
+        <link rel="stylesheet" href="CSS/style.css">
+        <link rel="shortcut icon" href="Img/alwasila blue.png">
+        <!--Magnific Popup CSS Files-->
+        <link href="css/magnific-popup.css" rel="stylesheet" type="text/css">
 
-		<!-- jQuery library -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <!--Ows Carousel CSS Files-->
+        <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
 
-		<!-- Latest compiled JavaScript -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-		<title>Home | Nubapoly</title>
-	</head>
-	<body>
-		<header>
-			<!-- Navigation start here-->
-			<nav class="navbar navbar-inverse navbar-fixed">
-				<div class="container">
-					<div class="navbar-header">
-						<!--Responsive Button-->
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navi">
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-							<a href="html/home.html" class="navbar-brand">
-							<img src="img/nuba.png" alt="Nuhu Bamalli Polytechnic" title="" />
-						</a>
-					</div>
-					<div class="collapse navbar-collapse" id="navi">
-							<!--Navigation menus-->
-						<ul class="nav navbar-nav navbar-right">
-							<li><a href="html/home.html">Home</a></li>
-							<li><a href="html/add-student.html">Add Student</a></li>
-							<li><a href="html/view-student.html">View Student</a></li>
-							<li><a href="html/complain.html">Complain</a></li>
-							<li><a href="html/view-respond.html">View Respond</a></li>
-							<li><a class="active" href="../Student Database/index.html">Logout</a></li>
-						</ul>
-							<!--Navigation menus end-->
-					</div>		
-				</div>
-			</nav>
-		</header>
-		<section class="slider" id="slider">
-			<div class="header">			
-				<img class="logo" src="img/nuba.png" align="left" />
-				<img class="logo" src="img/nuba.png" align="right" />
-				<h3> NUHU BAMALLI POLYTECHNIC ZARIA, STUDENT DATA BASE.</h3>
-			</div>
-			<br>
-			<br>
-			<div class="form">
-				<div class="text"></div>
-				<legend>Login</legend>
-				<form action="html/home.html" method="host" class="input-label">
-					<label>Username</label>
-					<input type="email" id="email" name="email" placeholder="Email" />
-					<label>Password</label>
-					<input type="password" id="password" name="password" placeholder="ncom123431" />
-					<input type="submit" value="submit" class="submit" />
-				</form>
-			</div>	
-		</section>
-		<footer class="sticky-footer">
-			<div class="my-auto">
-				<div class="copyright text-center my-auto"></div>
-					<p>&copy; Copyright - Alwasilatech &#9475;
-						<script src="js/main.js" type="text/JavaScript"></script>
-					</p>
-				</div>							
-			</div>
-		</footer>
+        <!--Font Awaresome CDN Ends-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
-		<script src="js/typed.min.js" type="text/javascript"></script>
-	</body>
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+         <!--Owl Carousel JS Files-->
+        <script src="owlcarousel/owl.carousel.min.js"></script>
+        <!--Magnific Popup JS Files-->
+        <script src="js/jquery.magnific-popup.min.js" type="text/javascript"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body> 
+        <!-- Navigation start here-->
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <!--Responsive Button-->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navi">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                        <a href="post" class="navbar-brand">
+                        <img src="Img/Whitelogo.png" alt="Alwasila Tech" title="" />
+
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="navi">
+                        <!--Navigation menus-->
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Add Student</a></li>
+                        <li><a href="#">View Student</a></li>
+                        <li><a href="#">Complain</a></li>
+                        <li><a href="#">View Respond</a></li>
+                        <li><a class="active" href="#">Logout</a></li>
+                    </ul>
+                        <!--Navigation menus end-->
+                </div>		
+            </div>
+        </nav>
+                     <!--Navigation Ends-->
+                     <!--Slider section start-->
+        <section class="slider text-center " id="slider">
+            <div class="slider-overlay">
+                <div class="slider-content">
+                    <div class="icons">
+                        <i class="fa fa-apple"></i>
+                        <i class="fa fa-android"></i>
+                    </div>
+                </div>
+            </div>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <div class="text"></div>
+            <div class="cta-div">
+                <a href="#" class="btn1">CONTACT US!</a>
+                <a href="#" class="btn2">LEAN TODAY !</a>
+            </div>
+            <br><br>
+            <div class="social-networks">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-telegram"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-whatsapp"></a>
+            </div>
+        </section>
+        <!--Slider Section Ends-->
+
+        <!--Services MArkups-->
+        <br><br>
+        <section class="sevice-area" id="services">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="section-title text-center">
+                            <h2><b>SERVICES</b></h2>
+                            <p>You can ask the question regarding the issues
+                            <br> we will solve that togather for sure. </p>
+                        </div> 
+                    </div>
+                </div><br><br>
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="service-wrap text-center">
+                            <div class="service-icon>">
+                                <i class="fa fa-leaf"></i>
+                                <h3>Development</h3>
+                                <p>You can ask the question regarding the issues
+                                <br> we will solve that togather for sure. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="service-wrap text-center">
+                            <div class="service-icon>">
+                                <i class="fa fa-laptop"></i>
+                                <h3>Support</h3>
+                                <p>You can ask the question regarding the issues
+                                <br> we will solve that togather for sure. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="service-wrap text-center">
+                            <div class="service-icon>">
+                                <i class="fa fa-heart"></i>
+                                <h3>Marketing</h3>
+                                <p>You can ask the question regarding the issues
+                                <br> we will solve that togather for sure. </p>
+                            </div>
+                        </div>
+                    </div> <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="service-wrap text-center">
+                            <div class="service-icon>">
+                                <i class="fa fa-cogs"></i>
+                                <h3>Insurance</h3>
+                                <p>You can ask the question regarding the issues
+                                <br> we will solve that togather for sure. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="service-wrap text-center">
+                            <div class="service-icon>">
+                                <i class="fa fa-diamond"></i>
+                                <h3>Design</h3>
+                                <p>You can ask the question regarding the issues
+                                <br> we will solve that togather for sure. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="service-wrap text-center">
+                            <div class="service-icon>">
+                                <i class="fa fa-cog"></i>
+                                <h3>Web Design</h3>
+                                <p>You can ask the question regarding the issues
+                                <br> we will solve that togather for sure. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Services Markups-->
+
+        <section class="work" id="works">
+            <div class="container-fluid">
+                <div class="row no-gutters">
+                    <div class="col-md-3 col-sm-3 col-xs-3">
+                        <div class="img-wrapper">
+                            <a href="img/service.jpg" title="Learn how to create your own website">
+                                <img src="img/service.jpg" class="img-responsive">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-3">
+                        <div class="img-wrapper">
+                            <a href="img/service1.jfif" title="Learn how to create your own website">
+                                <img src="img/service1.jfif" class="img-responsive">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-3">
+                        <div class="img-wrapper">
+                            <a href="img/service2.jpg" title="Learn how to create your own website">
+                                <img src="img/service2.jpg" class="img-responsive">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-3">
+                        <div class="img-wrapper">
+                            <a href="img/service3.jpg" title="Learn how to create your own website">
+                                <img src="img/service3.jpg" class="img-responsive">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-3">
+                        <div class="img-wrapper">
+                            <a href="img/service4.jpg" title="Learn how to create your own website">
+                                <img src="img/service4.jpg" class="img-responsive">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-3">
+                        <div class="img-wrapper">
+                            <a href="img/service6.jpeg" title="Learn how to create your own website">
+                                <img src="img/service6.jpeg" class="img-responsive">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-3">
+                        <div class="img-wrapper">
+                            <a href="img/service8.jpg" title="Learn how to create your own website">
+                                <img src="img/service8.jpg" class="img-responsive">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-3">
+                        <div class="img-wrapper">
+                            <a href="img/service7.jpeg" title="Learn how to create your own website">
+                                <img src="img/service7.jpeg" class="img-responsive">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Services Markups-->
+
+        <!--Team Markups-->
+        <section class="teams">
+            <div class="container text-center">
+                <h2><b>MEMBERS</b></h2>
+                <p>You can ask the question regarding the issues
+                <br> we will solve that togather for sure. </p>
+            </div><br>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="team-members" class="owl-carousel owl-theme">
+                            <div class="team-member">
+                                <img src="img/member.jpg" class="img-responsive">
+                                <div class="team-member-info text-center">
+                                    <h4 class="team-member-name">Michael James</h4>
+                                    <h4 class="team-member-designation">ceo</h4>
+                                    <ul class="social-list">
+                                        <li><a href="" class="social-icon icon-gray"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="" class="social-icon icon-gray"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="" class="social-icon icon-gray"><i class="fa fa-google-plus"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="team-member">
+                                <img src="img/member1.jpg" class="img-responsive">
+                                <div class="team-member-info text-center">
+                                    <h4 class="team-member-name">william Jacob</h4>
+                                    <h4 class="team-member-designation">sir devloper</h4>
+                                    <ul class="social-list">
+                                        <li><a href="" class="social-icon icon-gray"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="" class="social-icon icon-gray"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="" class="social-icon icon-gray"><i class="fa fa-google-plus"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="team-member">
+                                <img src="img/member2.jpg" class="img-responsive">
+                                <div class="team-member-info text-center">
+                                    <h4 class="team-member-name">Jennifer Matthew</h4>
+                                    <h4 class="team-member-designation">co-founder</h4>
+                                    <ul class="social-list">
+                                        <li><a href="" class="social-icon icon-gray"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="" class="social-icon icon-gray"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="" class="social-icon icon-gray"><i class="fa fa-google-plus"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="team-member">
+                                <img src="img/member3.jpg" class="img-responsive">
+                                <div class="team-member-info text-center">
+                                    <h4 class="team-member-name">Joseph Daniel</h4>
+                                    <h4 class="team-member-designation">sir designer</h4>
+                                    <ul class="social-list">
+                                        <li><a href="" class="social-icon icon-gray"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="" class="social-icon icon-gray"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="" class="social-icon icon-gray"><i class="fa fa-google-plus"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="team-member">
+                                <img src="img/member4.jpg" class="img-responsive">
+                                <div class="team-member-info text-center">
+                                    <h4 class="team-member-name">Hannah Emmanuel</h4>
+                                    <h4 class="team-member-designation">sales</h4>
+                                    <ul class="social-list">
+                                        <li><a href="" class="social-icon icon-gray"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="" class="social-icon icon-gray"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="" class="social-icon icon-gray"><i class="fa fa-google-plus"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Testimonials Markups-->
+        <br><br>
+        <section class="testimonials" id="testimonials">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <br><br>
+                        <h2><b>REVIEWS</b></h2>
+                        <div class="sub-heading">
+                            <div class="border-bottom"></div>
+                        </div>
+                    </div>
+                </div>
+                <br><br>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div id="carousel-testimonials" class="carousel side" data-ride="carousel"><br>
+                            <ol class="carousel-indicators">
+                                <li data-target="carousel-testimonials" data-slide-to="0" class="active"></li>
+                                <li data-target="carousel-testimonials" data-slide-to="1" ></li>
+                                <li data-target="carousel-testimonials" data-slide-to="2" ></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="item active text-center">
+                                    <img src="img/founder.jpg" class="center-block">
+                                    <h2> Arman Noah</h2>
+                                    <h4>Sr. Engineer</h4>
+                                    <P>Who is such a man as does not want to get succees life is not meant
+                                    <br>  such a man as does not want to get succees life.</P>
+                                </div>
+                                <div class="item text-center">
+                                    <img src="img/founder1.webp" class="center-block">
+                                    <h2>Sophia  Harvey</h2>
+                                    <h4>Sr. Engineer</h4>
+                                    <P>Who is such a man as does not want to get succees life is not meant
+                                    <br>  such a man as does not want to get succees life.</P>
+                                </div>
+                                <div class="item text-center">
+                                    <img src="img/founder2.jpg" class="center-block">
+                                    <h2>Rahul Zian</h2>
+                                    <h4>Sr. Dev</h4>
+                                    <P>Who is such a man as does not want to get succees life is not meant
+                                    <br>  such a man as does not want to get succees life.</P>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </section>
+                                  <!--Testimonials Markups End-->
+
+                                  <!--FAQ Markup Start-->
+                                  <br><br><br>
+        <section class="faq">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h2>GENERAL FAQs</h2>
+                        <div class="sub-heading">
+                            <P>You can ask the question regarding the issues we will 
+                                <br>solve that togather for sure.</P>
+                        </div>
+                    </div>
+                </div>
+            </div><br><br><br>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="panel-group" id="accordian">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" id="headingOne">
+                                    <h4 class="panel-title">
+                                        <a href="#collapseOne" data-toggle="collapse" data-parent="#accordian">
+                                            Have you any questions ?</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseOne" aria-colcount="panel-collapse collapse in" arial-labelledby="headingOne">
+                                    <div class="panel-body">
+                                        <P>Who is such a man as does not want to get succees life is not meant
+                                            <br>  such a man as does not want to get succees life.</P>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-group" id="accordian">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" id="headingTwo">
+                                    <h4 class="panel-title">
+                                        <a href="#collapseTwo" class="collapsed" data-toggle="collapse" data-parent="#accordian">
+                                            Are getting it exactly ?</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseTwo" aria-colcount="panel-collapse collapse" arial-labelledby="headingTwo">
+                                    <div class="panel-body">
+                                        <P>Who is such a man as does not want to get succees life is not meant
+                                            <br>  such a man as does not want to get succees life.</P>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-group" id="accordian">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" id="headingThree">
+                                    <h4 class="panel-title">
+                                        <a href="#collapseThree" class="collapsed" data-toggle="collapse" data-parent="#accordian">
+                                        Is it clearly explained ?</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseThree" aria-colcount="panel-collapse collapse" arial-labelledby="headingThree">
+                                    <div class="panel-body">
+                                        <P>Who is such a man as does not want to get succees life is not meant
+                                            <br>  such a man as does not want to get succees life.</P>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-group" id="accordian">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" id="headingFour">
+                                    <h4 class="panel-title">
+                                        <a href="#collapseFour" class="collapsed " data-toggle="collapse" data-parent="#accordian">
+                                        Course is deserving anything ?</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseFour" aria-colcount="panel-collapse collapse" arial-labelledby="headingFour">
+                                    <div class="panel-body">
+                                        <P>Who is such a man as does not want to get succees life is not meant
+                                            <br>  such a man as does not want to get succees life.</P>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="freeimage">
+                        <div class="col-md-2 col-md-offset-1">
+                            <img src="img/iphone.png">
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+                                  <!-- FAQ  Markup End-->
+
+                                <!-- Video Markup Start-->
+        <section class="video-area" id="video">
+            <div class="color_overlay" id="color_overlay">
+                <div class="video-container">
+                    <div id="player"></div>
+                    <div class="video-mask"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="video-mask">
+                            <a href="https://youtu.be/CdQH38DRH2w" class="play"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+                                <!-- Video  Markup End-->
+
+
+
+        
+        <script src="js/jquery.ripples-min.js" type="text/javascript"></script>
+        <script src="js/typed.min.js" type="text/javascript"></script>
+        <script src="Js/main.js" type="text/javascript"></script>
+    </body>
 </html>
